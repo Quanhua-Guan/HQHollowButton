@@ -27,11 +27,6 @@
                                 <state key="normal" title="CM">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
-                                        <color key="value" red="1" green="0.38823533059999998" blue="0.50588238240000005" alpha="1" colorSpace="deviceRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.031372550870000002" green="0.80000007149999997" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>

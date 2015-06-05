@@ -10,7 +10,7 @@
 #import <CoreText/CoreText.h>
 
 @implementation HQHollowButton{
-    UIColor *realBGColor;
+    UIColor *buttonRealBackgroundColor;
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -29,8 +29,7 @@
 
 -(void)setup
 {
-    realBGColor = self.backgroundColor;
-    self.backgroundColor = [UIColor clearColor];
+    
 }
 
 -(void)layoutSubviews
@@ -40,12 +39,12 @@
 }
 
 - (UIColor *)getBackgroundColor {
-    return realBGColor;
+    return buttonRealBackgroundColor;
 }
 
 -(void)setBackgroundColor:(UIColor *)backgroundColor {
     super.backgroundColor = [UIColor clearColor];
-    realBGColor = backgroundColor;
+    buttonRealBackgroundColor = backgroundColor;
 }
 
 - (void)drawRect:(CGRect)rect
@@ -111,7 +110,7 @@
     [bezierPath setUsesEvenOddFillRule:YES];
     [bezierPath appendPath:[UIBezierPath bezierPathWithCGPath:stringPath]];
     
-    [realBGColor set];
+    [buttonRealBackgroundColor set];
     [bezierPath addClip];
     
     CGContextAddPath(ctx, bezierPath.CGPath);
